@@ -1,0 +1,30 @@
+div(ng-include='"components/navbar/navbar.html"')
+
+h3 Calculator
+br
+
+.col-md-12
+
+	form.form(name='calculator', ng-submit='calculate(form)', no-validate='')
+		.formgroup
+			label Present Value (PV)
+			input.form-control(type='number', step='any', name='pv', ng-model='calculatorInput.presentValue')
+		.formgroup
+			label Years (N)
+			input.form-control(type='number', name='n', ng-model='calculatorInput.numberOfYears')
+		.formgroup
+			label Interest Rate (I)
+			input.form-control(type='number', step='any', name='i', ng-model='calculatorInput.interestRate')
+		br
+		div
+			button.btn.btn-invesere.btn-lg.btn-login(type='submit')
+				| Calculate
+
+br
+br
+
+.col-md-12
+	p
+		b(ng-show='calculatorOutput.futureValue') Future Value: 
+		{{calculatorOutput.futureValue | number : 2}}
+hr

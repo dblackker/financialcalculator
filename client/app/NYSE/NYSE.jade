@@ -1,0 +1,16 @@
+div(ng-include='"components/navbar/navbar.html"')
+
+h3 NYSE Information
+
+.col-md-12
+	input(type='text', ng-model='Symbol')
+	button(ng-click='addSymbol(Symbol)') Add Symbol
+	br
+
+
+	b Symbols
+	div(ng-repeat='symbol in Symbols') {{symbol}}
+	br
+	button(ng-click='getSymbolResults()') Get Stock Information	
+	br
+	div(ng-repeat='result in ResultData.query.results.quote') {{result.symbol}} {{result.Ask}}
