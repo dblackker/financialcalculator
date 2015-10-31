@@ -5,7 +5,7 @@ br
 
 .col-md-12
 
-	form.form(name='calculator', ng-submit='calculate(form)', no-validate='')
+	form.form(name='calculator', ng-submit='calculateApi(form)', no-validate='')
 		.formgroup
 			label Present Value (PV)
 			input.form-control(type='number', step='any', name='pv', ng-model='calculatorInput.presentValue')

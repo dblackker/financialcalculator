@@ -11,6 +11,6 @@ h3 NYSE Information
 	b Symbols
 	div(ng-repeat='symbol in Symbols') {{symbol}}
 	br
-	button(ng-click='getSymbolResults()') Get Stock Information	
+	button(ng-click='getSymbolResults()') Get Stock Information
 	br
 	div(ng-repeat='result in ResultData.query.results.quote') {{result.symbol}} {{result.Ask}}

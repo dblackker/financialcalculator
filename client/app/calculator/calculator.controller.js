@@ -5,6 +5,13 @@ angular.module('financialcalculatorApp')
   	$scope.calculatorInput = {};
   	$scope.calculatorOutput = {};
 
+  $scope.calculateApi = function(form) {
+    $http.post('/api/calculators', $scope.calculatorInput).success(function(awesomeThings) {
+      $scope.calculatorOutput.futureValue = awesomeThings.futureValue;
+      $scope.calculatorOutput.inflationAdjustedIncome = awesomeThings.inflationAdjustedIncome;
+    });
+  };
+  
     $scope.calculate = function (form) {
     	try
     	{
