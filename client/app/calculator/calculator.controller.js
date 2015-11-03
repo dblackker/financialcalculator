@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('financialcalculatorApp')
-  .controller('CalculatorCtrl', function ($scope) {
+  .controller('CalculatorCtrl', function ($scope, $http) {
   	$scope.calculatorInput = {};
   	$scope.calculatorOutput = {};
 
@@ -11,7 +11,7 @@ angular.module('financialcalculatorApp')
       $scope.calculatorOutput.inflationAdjustedIncome = awesomeThings.inflationAdjustedIncome;
     });
   };
-  
+
     $scope.calculate = function (form) {
     	try
     	{

@@ -22,6 +22,18 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
 @import 'admin/admin.scss';
 @import 'calculator/calculator.scss';
 @import 'calculator2/calculator2.scss';
-@import 'main/main.scss';
 @import 'modal/modal.scss';
 // endinjector
+
+body {
+  background-color: #E4E4E4;
+  font-family: "courier new";
+}
+
+.navbar {
+  background-color: #D4EAFF;
+}
+
+h3 {
+  margin-left: 10px;
+}

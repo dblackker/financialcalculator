@@ -2,20 +2,17 @@
 
 angular.module('financialcalculatorApp')
   .controller('NavbarCtrl', function ($scope, $location, Auth) {
-    $scope.menu = [{
-      'title': 'Home',
-      'link': '/'
-    },
+    $scope.menu = [
     {
-      'title': 'Calculator',
-      'link': '/calculator'
+      'title': 'Future Value',
+      'link': '/'
     },
     {
       'title': 'Annuity',
       'link': '/annuity'
     },
     {
-      'title': 'NYSE',
+      'title': 'NYSE Quotes',
       'link': '/nyse'
     }];
 

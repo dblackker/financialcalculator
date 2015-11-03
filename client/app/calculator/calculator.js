@@ -4,7 +4,7 @@ angular.module('financialcalculatorApp')
   .config(function ($stateProvider) {
     $stateProvider
       .state('calculator', {
-        url: '/calculator',
+        url: '/',
         templateUrl: 'app/calculator/calculator.html',
         controller: 'CalculatorCtrl'
       });

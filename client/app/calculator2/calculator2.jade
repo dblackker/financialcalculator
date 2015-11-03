@@ -28,7 +28,7 @@ br
 br
 
 .col-md-12
-    div(ng-show='calculatorOutput.futureValue')
+    div(ng-show='calculatorOutput.futureValue').calculator-result
         p
             b Future Value: {{calculatorOutput.futureValue | number : 2}}
         p
